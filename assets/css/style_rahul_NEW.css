@@ -1248,7 +1248,9 @@ footer .icon_fixed .whatsapp_fixed {
   font-size: 14px;
   padding: 8px 5px !important;
 }
-
+.zsiq_floatmain.zsiq_theme1.siq_bR .zsiq_cnt * {
+  color: #000 !important;
+}
 
 
 @media (max-width: 767px) {
