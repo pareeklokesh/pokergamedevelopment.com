@@ -41,7 +41,15 @@
     <script type="text/javascript">
     var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"36adf351164eed3d0e4937918e70cac74a7fd4e8e3603d6c673a251d738f68017c1ed30769d0dddd99759860a463ef4d", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
     </script>
+<!-- Global site tag (gtag.js) - Google Ads: 10901383541 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10901383541"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-10901383541');
+</script>
     
 </head>
 <body>
@@ -906,7 +914,8 @@ or Software Updates. We take care of all these.</p>
 
     <!-- footer -->
     <footer class="dark-back">
-        <p>&copy; 2022 Poker Game Development. All Rights Reserved. 
+      <p style="text-align: center;padding-bottom: 0;">This game involves an element of financial risk and may be addictive. Please play responsibly and at your own risk. For 18+ only</p>
+        <p style="padding-top:10px;">&copy; 2022 Poker Game Development. All Rights Reserved. 
           <span>
             <a href="https://www.dmca.com/Protection/Status.aspx?ID=12720dd7-bc14-47a2-9623-c0ffd79c248f" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img data-src="assets/images/dmca.png" loading="lazy" class="lazyload"  alt="DMCA.com Protection Status" /></a>
             
@@ -943,7 +952,7 @@ opacity: 1;font-size: 30px !important;position: absolute;right: 21px;top: 5px;">
                <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='margin: auto;'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
    <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
-   <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+   
 <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads1742164000002588002 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1742164000002588002()' accept-charset='UTF-8'>
  <input type='text' style='display:none;' name='xnQsjsdp' value='89a4c4e1cd2b8d798a13869a512e0430f10d4e54011dc2ab6ecb48142704f733'></input> 
  <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
@@ -1010,6 +1019,24 @@ opacity: 1;font-size: 30px !important;position: absolute;right: 21px;top: 5px;">
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- <script src='https://www.google.com/recaptcha/api.js' async defer></script> -->
+
+    <script>
+      var fired = false;
+    window.addEventListener('scroll', function() {
+      
+    let scroll = window.scrollY;
+    if (scroll > 0  && fired === false) {
+          var recaptchaScript = document.createElement('script');
+         recaptchaScript.src = 'https://www.google.com/recaptcha/api.js';
+         recaptchaScript.defer = true;
+         document.body.appendChild(recaptchaScript);    
+        fired = true;
+        console.log('On scroll fired');
+    }
+}, true);
+</script>
 
     <script>
       $(document).ready(function(){
