@@ -1314,6 +1314,15 @@ header .navbar .collapse ul li a:hover {
 .discuss-form {
   padding-top: 60px;
 }
+#collapsibleNavbar {
+  padding-bottom: 16px;
+}
+.sticky-top .navbar .collapse ul li button {
+  margin-top: 8px;
+}
+.banner.banner-home {
+  padding-top: 115px !important;
+}
 
 }
 
