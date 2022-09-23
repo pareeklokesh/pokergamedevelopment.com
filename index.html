@@ -1023,7 +1023,7 @@ opacity: 1;font-size: 30px !important;position: absolute;right: 21px;top: 5px;">
 
     <!-- <script src='https://www.google.com/recaptcha/api.js' async defer></script> -->
 
-    <script>
+    <!-- <script>
       var fired = false;
     window.addEventListener('scroll', function() {
       
@@ -1037,6 +1037,30 @@ opacity: 1;font-size: 30px !important;position: absolute;right: 21px;top: 5px;">
         console.log('On scroll fired');
     }
 }, true);
+</script> -->
+<script>
+$(document).ready(function(){
+    if(window.matchMedia("(max-width: 767px)").matches){
+        var fired = false;
+    window.addEventListener('scroll', function() {
+      
+    let scroll = window.scrollY;
+    if (scroll > 0  && fired === false) {
+          var recaptchaScript = document.createElement('script');
+         recaptchaScript.src = 'https://www.google.com/recaptcha/api.js';
+         recaptchaScript.defer = true;
+         document.body.appendChild(recaptchaScript);    
+        fired = true;
+        console.log('On scroll fired');
+    }
+}, true);
+    } else{
+        var recaptchaScriptee = document.createElement('script');
+         recaptchaScriptee.src = 'https://www.google.com/recaptcha/api.js';
+         recaptchaScriptee.defer = true;
+         document.body.appendChild(recaptchaScriptee);
+    }
+});
 </script>
 
     <script>
