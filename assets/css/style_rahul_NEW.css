@@ -34,8 +34,6 @@ button{
   letter-spacing: 1px;
   transition: .5s all;
 }
-.discuss-form .model_header h3 {
-  font-size: 22px;}
 
 button:focus{
   outline: none!important;
